@@ -4,7 +4,7 @@ from typing import List
 
 from src.db.core.database import get_db
 from src.db.crud.operations import get_questions, get_top_three, create_game_session
-from schemas import GameSessionRequest, QuestionResponse, GameSessionResponse
+from src.api.schemas import GameSessionRequest, QuestionResponse, GameSessionResponse
 
 # Creacion de router para la creación de endpoints adecuados
 router = APIRouter()
