@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 
-from endpoints import router
+from src.api.endpoints import router
 
 # Inicialización de la aplicación FastAPI
 app = FastAPI()
