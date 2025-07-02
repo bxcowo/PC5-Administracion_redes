@@ -24,5 +24,5 @@ class Option(Base):
 
     question = relationship("Question", back_populates="options")
 
-    def __str__(self) -> str:
+    def __repr__(self) -> str:
         return f"<Option(options_id={self.options_id}, question_id={self.question_id}, content={self.content}, is_correct={self.is_correct})>"
