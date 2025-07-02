@@ -5,6 +5,7 @@ from typing import List
 from sqlalchemy.orm.strategy_options import joinedload
 
 from src.db.models.question import Question
+from src.db.models.option import Option
 from src.db.models.game_session import GameSession
 
 def get_questions(db: Session) -> List[Question]:
