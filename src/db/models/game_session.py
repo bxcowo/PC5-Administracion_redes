@@ -27,4 +27,4 @@ class GameSession(Base):
     game_date = Column(DateTime, nullable=False, default=func.now())
 
     def __repr__(self) -> str:
-        return f"<GameSession(game_id={self.game_id}), player_name={self.player_name}, total_score={self.total_score}>"
+        return f"<GameSession(game_id={self.game_id}, player_name={self.player_name}, total_score={self.total_score})>"
