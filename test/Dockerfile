@@ -9,5 +9,6 @@ RUN pip3 install pytest httpx pytest-cov
 
 COPY ./src ./src
 COPY ./test ./test
+COPY ./game_objects ./game_objects
 
-CMD ["pytest", "test/", "-v", "--cov=src"]
+CMD ["pytest", "test/", "-v", "--cov=src", "--cov=game_objects"]
