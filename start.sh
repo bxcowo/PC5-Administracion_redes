@@ -8,3 +8,5 @@ pip3 install -r requirements.txt
 
 # Run the application
 python3 main.py
+
+./clean.sh
