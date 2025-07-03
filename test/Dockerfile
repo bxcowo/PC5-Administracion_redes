@@ -5,9 +5,9 @@ WORKDIR /app
 COPY ./src/requirements.txt .
 
 RUN pip3 install --no-cache-dir -r requirements.txt
-RUN pip3 install pytest httpx
+RUN pip3 install pytest httpx pytest-cov
 
 COPY ./src ./src
 COPY ./test ./test
 
-CMD ["pytest", "test/", "-v"]
+CMD ["pytest", "test/", "-v", "--cov=src"]
